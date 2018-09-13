@@ -1,0 +1,21 @@
+- name: include vars
+  include_vars: "{{ playbook_dir }}/config.yml"
+
+- name: create build dir
+  file:
+    path: "{{ BUILD_DIR }}"
+    state: directory
+    mode: 0755
+
+- name: make
+  command: chdir="{{ BUILD_DIR }}" cmake ..
+
+- name: compile
+  command: chdir="{{ BUILD_DIR }}" make
+
+- name: test
+  shell: "{{ BASE_DIR }}/bin/foo"
+  register: test_result
+
+- debug:
+    var: test_result.stdout_lines

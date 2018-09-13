@@ -1,0 +1,4 @@
+# global variables
+
+BASE_DIR: /opt/dssat-csm
+BUILD_DIR: "{{ BASE_DIR }}/build"

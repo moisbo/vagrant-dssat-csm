@@ -1,0 +1,4 @@
+# global variables
+
+BASE_DIR: /opt/cmake_fortran_template
+BUILD_DIR: "{{ BASE_DIR }}/build"
