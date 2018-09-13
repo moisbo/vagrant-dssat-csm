@@ -1,6 +1,6 @@
 ### Vagrant Ansible dssat csm
 
-#### ! WORK IN PROGRESS 
+#### ! WORK IN PROGRESS
 
 `vagrant up`
 
@@ -16,5 +16,8 @@ git clone https://github.com/moisbo/cmake_fortran_template
 git clone https://github.com/moisbo/dssat-csm
 ```
 
-### To run provision ansible
-`vagrant up --provision-with ansible`
+### To run provision ansible template
+`vagrant up --provision-with ansible-template`
+
+### To run provision ansible dssat
+`vagrant up --provision-with ansible-dssat`
